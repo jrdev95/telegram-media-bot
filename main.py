@@ -14,7 +14,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("media_bot")
 
 apihelper.CONNECT_TIMEOUT = 30
-apihelper.READ_TIMEOUT = 120
+apihelper.READ_TIMEOUT = 300
+apihelper.WRITE_TIMEOUT = 300
 
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode=None)
 
